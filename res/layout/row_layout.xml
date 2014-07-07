@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:padding="5dip">
+
+
+        <ImageView
+                android:id="@+id/roadImage"
+                android:layout_width="50dip"
+                android:layout_height="50dip">
+        </ImageView> 
+
+         <ImageView
+                android:id="@+id/roadTraffic"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_marginRight="2dip"
+                android:layout_alignParentRight="true" >
+        </ImageView>
+		
+        <TextView
+                android:text="road"
+                android:layout_marginLeft="5dip"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15sp"
+                android:id="@+id/roadId"
+                android:layout_toRightOf="@id/roadImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        
+        <TextView
+               android:text="timestamp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#6b71f1"
+                android:id="@+id/timestampId"
+                android:layout_toRightOf="@id/roadImage"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+         </TextView>
+               
+       <!--  -->
+        
+        
+                
+       
+        
+</RelativeLayout>

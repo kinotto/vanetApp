@@ -1,0 +1,42 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="Theme.Black.OptionalActionBar" parent="@android:style/Theme.Black">
+        
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowTitleSize">20dp</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:displayOptions"></item>
+        <item name="android:actionBarStyle">@android:style/Widget.Holo.Light.ActionBar </item>
+   
+    </style>
+
+    <style name="OptionalVisibility">
+        <item name="android:visibility">invisible</item>
+        <item name="android:height">1dp</item>
+    </style>
+    
+
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">#323331</item>
+    </style>
+ 
+    <style name="CustomTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">35dip</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+        <item name="android:windowActionBar">true</item>
+    </style>
+    
+    <style name="Theme.MyAppTheme" parent="android:style/Theme.Holo.Light">
+         <item name="android:actionBarStyle">@style/Theme.MyAppTheme.ActionBar</item>
+    </style>
+    
+   <style name="Theme.MyAppTheme.ActionBar" parent="android:style/Widget.Holo.Light.ActionBar">
+      <!--    <item name="android:background">#FF4444</item>-->
+    </style>
+
+    
+</resources>

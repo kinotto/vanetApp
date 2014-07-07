@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+   <ImageView 
+       android:id="@+id/customDialogImage"
+       android:layout_width="50dip"
+       android:layout_height="50dip"
+       android:src="@drawable/xml_icon" 
+       />
+     <TextView 
+        android:id="@+id/customDialogTitle"
+        android:text="Export traffic data in XML format ?"
+        android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textColor="@color/abs__holo_blue_light"
+		android:includeFontPadding="false" 
+        android:textStyle="bold"
+		android:textSize="20sp"
+		android:layout_toRightOf="@+id/customDialogImage"
+        />  
+      
+         
+
+</RelativeLayout>  

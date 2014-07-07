@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?> <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+   <ImageView 
+       android:id="@+id/customDialogBluetoothImage"
+       android:layout_width="50dip"
+       android:layout_height="50dip"
+       android:src="@drawable/bluetooth_img" 
+       />
+     <TextView 
+        android:id="@+id/customDialogBluetooothTitle"
+        android:text="Received new traffic data and merged with the local data, would you like to see them ?"
+        android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textColor="@color/abs__holo_blue_light"
+		android:includeFontPadding="false" 
+        android:textStyle="bold"
+		android:textSize="20sp"
+		android:layout_toRightOf="@+id/customDialogBluetoothImage"
+        />  
+</RelativeLayout>  

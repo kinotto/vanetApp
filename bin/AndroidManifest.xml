@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vanetapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <!-- <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />  -->
+    <permission
+        android:name="com.example.vanetapp.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.vanetapp.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/icon_app"
+        android:label="VanetApp"
+        android:theme="@style/Theme.Black.OptionalActionBar"
+        android:uiOptions="splitActionBarWhenNarrow" >
+        <service android:name="it.unibo.vanetapp.services.FakeBluetoothService" />
+        <service android:name="it.unibo.vanetapp.services.TrafficService" />
+        <service android:name="it.unibo.vanetapp.services.BluetoothService" />
+        
+	<!-- <receiver android:name="it.unibo.vanetapp.broadcastreceiver.MarkerDataBroadCastReceiver">
+			<intent-filter> 
+      	 		 <action android:name="it.unibo.vanetapp.services.TrafficService.TRAFFIC_CHANGE_ACTION" /> 
+      	 		 <action android:name="com.example.vanetapp.TrafficListActivity.DELETE_ACTION"/>
+			</intent-filter>
+		</receiver>  -->
+		
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBFshz-VHR-mPUKP-juhrRxLLSZGiRdHDs" />
+
+        <activity
+             android:name="com.example.vanetapp.MainActivity"
+             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.vanetapp.TrafficListActivity"
+            android:label="@string/title_activity_traffic_list" >
+        </activity>
+        <activity
+            android:name="com.example.vanetapp.BluetoothListActivity"
+            android:label="@string/title_activity_bluetooth_list"
+	   	    android:theme="@android:style/Theme.Black">
+        </activity>
+        <!--   android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >  
+        android:theme="@android:style/Theme.Holo.Dialog">-->
+    </application>
+
+</manifest>

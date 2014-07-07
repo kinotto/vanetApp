@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:padding="5dip">
+
+     <TextView 
+       android:id="@+id/idWelcome"
+       android:text="You're here! ENJOY!"
+       android:padding="10dp"  
+       android:textSize="15sp" 
+       android:textStyle="bold"
+     
+       android:layout_width="wrap_content"
+  	   android:layout_height="wrap_content"
+      />
+	
+    <ImageView 
+       android:id="@+id/idRed"
+       android:src="@drawable/tl_red"
+       android:layout_width="20dip"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/idWelcome"/>
+   <TextView 
+       android:id="@+id/idMyTextRed"
+       android:text="stands for High Traffic"
+       android:padding="5dp"  
+       android:textSize="13sp" 
+       android:textStyle="bold"
+       android:textColor="@color/abs__holo_blue_light"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/idRed"
+       android:layout_below="@+id/idWelcome"
+      />
+   
+   
+    <ImageView 
+       android:id="@+id/idYellow"
+       android:src="@drawable/tl_yellow"
+       android:layout_width="20dip"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/idRed"/>
+   <TextView 
+       android:id="@+id/idMyTextYellow"
+       android:text="stands for Medium Traffic"
+       android:padding="5dp"  
+       android:textSize="13sp" 
+       android:textStyle="bold"
+       android:textColor="@color/abs__holo_blue_light"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/idYellow"
+       android:layout_below="@+id/idMyTextRed"
+      />
+   
+   
+    <ImageView 
+       android:id="@+id/idGreen"
+       android:src="@drawable/tl_green"
+       android:layout_width="20dip"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/idYellow"/>
+   <TextView 
+       android:id="@+id/idMyTextGreen"
+       android:text="stands for Low Traffic"
+       android:padding="5dp"  
+       android:textSize="13sp" 
+       android:textStyle="bold"
+       android:textColor="@color/abs__holo_blue_light"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/idGreen"
+       android:layout_below="@+id/idMyTextYellow"
+      />
+        
+        
+                
+       
+        
+</RelativeLayout>

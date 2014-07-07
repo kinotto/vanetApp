@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <item
+        android:id="@+id/menu_delete"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        />
+    
+    <item
+        android:id="@+id/menu_xml_save"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="xml"
+        android:icon="@android:drawable/ic_menu_save"
+        />
+    <item
+        android:id="@+id/menu_xml_load"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="xml"
+        android:icon="@drawable/ic_menu_example"
+        />
+</menu>
