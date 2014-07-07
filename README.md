@@ -1,3 +1,2 @@
-#VanetAPP (Vehicular ad oc area network Application)
-A simple Android application to monitor the road traffic.
-<p>to try the app just download the apk file from the bin folder</p>
+<h1>VanetAPP (Vehicular ad oc area network Application)</h1>
+<h2>A simple Android application to monitor the road traffic</h2>
