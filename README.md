@@ -2,7 +2,6 @@
 
 A simple Android application to monitor the road traffic
 
-##the support for this app has been suspended quite a while ago
 
 ##1. Description
 The Android client can estimate the road traffic locally and collect all the estimation made by other devices when are sufficiently close. These data are exchanged via bluetooth and are merged locally. The more are the devices in a specific area the more will be the precision of the estimation.
