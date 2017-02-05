@@ -11,7 +11,7 @@ The estimation is made using the sensors integrated in the device, in particular
 ##2. installation
 download the ```.apk``` and you're ready to go
 
-##3. Screenshothttp:
+##3. Screenshot:
 <img src="http://www.karimabdelcadir.com/projects/vanetApp/img/1.png" width="300" height="300" alt="no image" class="inline"/>
 
 ##4. License:
