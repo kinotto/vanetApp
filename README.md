@@ -1,19 +1,19 @@
-#VanetAPP (Vehicular ad oc area network Application)
+# VanetAPP (Vehicular ad oc area network Application)
 
 A simple Android application to monitor the road traffic
 
 
-##1. Description
+## 1. Description
 The Android client can estimate the road traffic locally and collect all the estimation made by other devices when are sufficiently close. These data are exchanged via bluetooth and are merged locally. The more are the devices in a specific area the more will be the precision of the estimation.
 The estimation is made using the sensors integrated in the device, in particular analyzing the variations of velocity and acceleration.
 
-##2. installation
+## 2. installation
 download the ```.apk``` and you're ready to go
 
-##3. Screenshot:
+## 3. Screenshot:
 <img src="http://www.karimabdelcadir.com/projects/vanetApp/img/1.png" width="300" height="300" alt="no image" class="inline"/>
 
-##4. License:
+## 4. License:
 MIT License
 
 Copyright (c) 2017 kinotto
